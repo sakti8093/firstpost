@@ -29,3 +29,11 @@ Admin Page
 Deployed Link
 
 Website: https://firstpost-clone.netlify.app/
+
+---------------FOR ADDING,EDITING,DELETE ANY NEWS YOU CAN LOGIN AS A ADMIN----------------------------------
+
+ADMIN CRIDENTIALS--->
+email: admin@gmail.com
+        password: *admin@123  //INCLUDE ' * ' FOR SURE
+ 
+ -----------------------------------------------------------------------THANK YOU--------------------------------------------------------------------------------------
