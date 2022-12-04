@@ -1,7 +1,7 @@
 // let userid = localStorage.getItem("Userid");
 // let display = async() => {
 //     let res1 = await fetch(
-//         `https://firstpost-masai-server.herokuapp.com/users/${userid}`
+//         `https://firstpost.onrender.com/users/${userid}`
 //     );
 //     let res2 = await res1.json();
 //     console.log(res2.username);
@@ -11,7 +11,7 @@
 
 document.getElementById("mainStoryTitle").innerText = "Big Story";
 
-getData("https://firstpost-masai-server.herokuapp.com/HOME-PAGE").then(
+getData("https://firstpost.onrender.com/HOME-PAGE").then(
     (res) => {
         res.forEach((element) => {
             document.querySelector(

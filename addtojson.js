@@ -13,7 +13,7 @@ let addtojson=async()=>
         body:document.getElementById("body").value
     }
         let selected=document.getElementById("cateogory").value;
-        let res1=await fetch(`https://firstpost-masai-server.herokuapp.com/${selected}`,
+        let res1=await fetch(`https://firstpost.onrender.com/${selected}`,
         {
                 method:"POST",
                 body:JSON.stringify(obj),
@@ -50,7 +50,7 @@ let addtoreanding=async()=>
         body:document.getElementById("body1").value
     }
         let selected=document.getElementById("cateogory1").value;
-        let res1=await fetch("https://firstpost-masai-server.herokuapp.com/HEAD-NEWS",
+        let res1=await fetch("https://firstpost.onrender.com/HEAD-NEWS",
         {
                 method:"POST",
                 body:JSON.stringify(obj),
@@ -76,7 +76,7 @@ let addtoreanding=async()=>
         body:document.getElementById("body2").value
     }
         let selected=document.getElementById("cateogory1").value;
-        let res1=await fetch("https://firstpost-masai-server.herokuapp.com/MOST-READ",
+        let res1=await fetch("https://firstpost.onrender.com/MOST-READ",
         {
                 method:"POST",
                 body:JSON.stringify(obj),
@@ -92,10 +92,10 @@ let addtoreanding=async()=>
     
     let selectedCateogory=document.getElementById("cateogory3").value;
     let selectedTitle=document.getElementById("title3").value;
-    let res3=await fetch(`https://firstpost-masai-server.herokuapp.com/${selectedCateogory}?title=${selectedTitle}`)
+    let res3=await fetch(`https://firstpost.onrender.com/${selectedCateogory}?title=${selectedTitle}`)
     let res4=await res3.json();
     console.log(res4[0].id);
-    let res5=await fetch(`https://firstpost-masai-server.herokuapp.com/${selectedCateogory}/${res4[0].id}`,{
+    let res5=await fetch(`https://firstpost.onrender.com/${selectedCateogory}/${res4[0].id}`,{
         method:"DELETE"
     })
     alert("Delete News Successfully !!")
@@ -104,7 +104,7 @@ let addtoreanding=async()=>
  {
     let selectedCateogory1=document.getElementById("cateogory4").value;
     let selectedTitle1=document.getElementById("title4").value;
-    let res31=await fetch(`https://firstpost-masai-server.herokuapp.com/${selectedCateogory1}?title=${selectedTitle1}`)
+    let res31=await fetch(`https://firstpost.onrender.com/${selectedCateogory1}?title=${selectedTitle1}`)
     let data=await res31.json();
     document.getElementById("lastcontainer").style.display="block"
     console.log(data);
@@ -134,7 +134,7 @@ let patchRequest=async(cat,id)=>
         body:document.getElementById("body4").value
     }
 
-    let res6=await fetch(`https://firstpost-masai-server.herokuapp.com/${cat}/${id}`,{
+    let res6=await fetch(`https://firstpost.onrender.com/${cat}/${id}`,{
         method:"PATCH",
         body:JSON.stringify(UpdateData),
         headers:{
